@@ -5,3 +5,5 @@ obj
 /winsw.csproj.user
 /winsw_cert.pfx
 *.user
+/packages/*
+
