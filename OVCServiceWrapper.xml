@@ -1,0 +1,10 @@
+﻿<configuration>
+  <id>winsw</id>
+  <name>OVCServiceWrapper test service(2)</name>
+  <description>This service is a do-nothing test app. Really.</description>
+  <download from="http://www.google.com/" to="%BASE%\index.html" />
+  <download from="http://www.nosuchhostexists.com/" to="%BASE%\dummy.html" />
+
+  <executable>java.exe</executable>
+  <arguments>-version</arguments>
+</configuration>

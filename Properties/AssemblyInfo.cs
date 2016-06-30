@@ -1,12 +1,12 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Windows Service Wrapper")]
+[assembly: AssemblyTitle("OVC Windows Service Wrapper")]
 [assembly: AssemblyDescription("Allows arbitrary process to run as a Windows service by wrapping it")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("CloudBees, Inc.")]
-[assembly: AssemblyProduct("Windows Service Wrapper")]
-[assembly: AssemblyCopyright("Copyright 2008-2013 Sun Microsystems, Inc., CloudBees, Inc.")]
+[assembly: AssemblyCompany("OneView Commerce, Inc.")]
+[assembly: AssemblyProduct("OVC Windows Service Wrapper")]
+[assembly: AssemblyCopyright("Copyright 2008-2013 Sun Microsystems, Inc., CloudBees, Inc. OneView Commerce, Inc.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -28,5 +28,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.18.0.0")]
-[assembly: AssemblyFileVersion("1.18.0.0")]
+[assembly: AssemblyVersion("1.18.*")]
+//[assembly: AssemblyFileVersion("1.18.0.0")]

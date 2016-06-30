@@ -1,16 +1,16 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Management;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading;
-using Microsoft.Win32;
 using WMI;
 using ServiceType = WMI.ServiceType;
-using System.Reflection;
 
 namespace winsw
 {
@@ -766,7 +766,7 @@ namespace winsw
         {
             Console.WriteLine("A wrapper binary that can be used to host executables as Windows services");
             Console.WriteLine("");
-            Console.WriteLine("Usage: winsw [/redirect file] <command> [<args>]");
+            Console.WriteLine("Usage: OVCServiceWrapper [/redirect file] <command> [<args>]");
             Console.WriteLine("       Missing arguments trigger the service mode");
             Console.WriteLine("");
             printAvailableCommandsInfo();
@@ -774,9 +774,7 @@ namespace winsw
             Console.WriteLine("Extra options:");
             Console.WriteLine("- '/redirect' - redirect the wrapper's STDOUT and STDERR to the specified file");
             Console.WriteLine("");
-            printVersion();
-            Console.WriteLine("More info: https://github.com/kohsuke/winsw");
-            Console.WriteLine("Bug tracker: https://github.com/kohsuke/winsw/issues");
+            printVersion();            
         }
 
         //TODO: Rework to enum in winsw-2.0
@@ -797,7 +795,7 @@ namespace winsw
 
         private static void printVersion()
         {
-            Console.WriteLine("WinSW " + Version);
+            Console.WriteLine("OVCServiceWrapper " + Version);
         }
     }
 }
