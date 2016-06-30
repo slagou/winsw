@@ -1,7 +1,7 @@
-﻿using System;
+﻿using DynamicProxy;
+using System;
 using System.Management;
 using System.Reflection;
-using DynamicProxy;
 
 namespace WMI
 {
